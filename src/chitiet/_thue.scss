@@ -1,0 +1,203 @@
+.thueUser {
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.72);
+}
+.list-thue {
+  position: relative;
+  background: #FFF;
+  border-radius: 24px;
+  justify-content: center;
+  align-items: center;
+  top:15%;
+  max-width:628px;
+  margin: 0 auto;
+
+  .list-headerThue {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px;
+    .txt-nameThue {
+      font-family: 'Montserrat';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 24px;
+      letter-spacing: 0.024em;
+      color: rgba(101, 1, 7, 0.87);
+    }
+    img {
+      color: rgba(101, 1, 7, 0.87);
+      cursor: pointer;
+    }
+  }
+  .background-user {
+    background: #FE616B;
+    max-width: 628px;
+    width: 100%;
+    max-height: 120px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    margin-bottom: 26px;
+    img {
+    padding: 20px 24px;
+    }
+    .userName-thue {
+        .txt-thueName {
+          font-family: 'Montserrat';
+          font-style: normal;
+          font-weight: 700;
+          font-size: 16px;
+          line-height: 24px;
+          letter-spacing: 0.024em;
+          color: #FFFFFF;
+        }
+        .txt-PriceThue {
+          display: flex;
+          align-items: center;
+          color: #FFFFFF;
+          p {
+            opacity: .5;
+            margin-left: 5px;
+          }
+        }
+    }
+  }
+  .list-datePriceThue {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 24px;
+    margin-bottom: 22px;
+    .txtdateThue {
+      font-family: 'Montserrat';
+      font-style: normal;
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 24px;
+      letter-spacing: 0.012em;
+      color: #650107;
+    }
+    .priceThue-user {
+
+        .onetwothere {
+          display: flex;
+          align-items: center;
+            .numberPrice {
+              display: flex;
+              align-items: center;
+              color: #650107;
+              font-weight: 500;
+              padding-bottom: 8px;
+              border-bottom: 1px solid #E8E8E8;
+              p {
+                color: #650107;
+                opacity: 0.6;
+                margin-left: 12px;
+              }
+            }
+            .thue-increasenumber {
+              display: flex;
+              align-items: center;
+
+            }
+        }
+    }
+    .Thue-Price {
+      display: flex;
+      font-family: 'Montserrat';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 20px;
+      text-align: right;
+      letter-spacing: 0.012em;
+      color: #FE616B;
+      margin-bottom: 10px;
+      p {
+        color: #FE616B;
+        opacity: 0.5;
+        margin-left: 10px;
+      }
+    }
+    .surplus {
+      display: flex;
+      align-items: center;
+      font-family: 'Montserrat';
+      font-style: normal;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 20px;
+      letter-spacing: 0.012em;
+      color: rgba(101, 1, 7, 0.6);
+          .tang {
+              display: flex;
+              align-items: center;
+              color: #FE616B;
+              margin-left: 6px;
+
+              p {
+              color: rgba(101, 1, 7, 0.6);
+              margin-left: 3px;
+              }
+
+          }
+    }
+  }
+  .inputTxt {
+    box-sizing: border-box;
+    border-radius: 8px;
+    border: 1px solid #E8E8E8;
+    margin-bottom: 24px;
+    max-width: 580px;
+    width: 100%;
+    margin-left: 24px;
+    padding: 24px;
+    input {
+      background: #FFFFFF;
+      box-sizing: border-box;
+      border-radius: 8px;
+      padding: 10px 16px;
+      color: rgba(101, 1, 7, 0.32);
+      &::placeholder {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 20px;
+        letter-spacing: 0.012em;
+        color: rgba(101, 1, 7, 0.32);
+        padding: 0px 16px;
+      }
+    }
+  }
+  .buttonn {
+    
+    button {
+      position: relative;
+      font-family: 'Montserrat';
+      font-style: normal;
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 24px;
+      letter-spacing: 0.012em;
+      color: #FFFFFF;
+      flex: none;
+      order: 0;
+      flex-grow: 0;
+      margin: 0px 12px;
+      background-color: #FE616B;
+      padding: 10px 24px;
+      border-radius: 8px;
+      margin-left: 510px;
+      margin-bottom: 24px;
+    }
+  }
+
+}

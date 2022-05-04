@@ -1,0 +1,164 @@
+.mesginger {
+  position: fixed;
+  max-width: 367px;
+  width: 100%;
+  background: #FAFAFA;
+  border-radius: 24px 24px 0px 0px;
+  right: 100px;
+  bottom: 0;
+  border: 1px solid #e1dddd ;
+    .mesHeader {
+       
+      background: #FFFFFF;
+      border-radius: 24px 24px 0px 0px;
+      border-bottom: 1px solid rgb(228, 226, 226);
+          .mesUser {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 12px;
+            .mesClose {
+              cursor: pointer;
+            }
+            .userImg {
+              display: flex;
+              align-items: center;
+              img {
+                margin-right: 8px;
+              }
+              .mesName {
+                font-family: 'Montserrat';
+                font-style: normal;
+                font-weight: 600;
+                font-size: 14px;
+                line-height: 20px;
+                letter-spacing: 0.3px;
+                color: #650107;
+              }
+            }
+          }
+    }
+    .mesBetween {
+      background-color: #FAFAFA;
+        .mesbet {
+          margin-top: 112px;
+          padding: 0 12px;
+          .mesUser {
+              .userImg {
+                  display: flex;
+
+                img {
+                  margin-right: 12px;
+                }
+                .txtMes {
+                  padding: 12px;
+                  background: #FFFFFF;
+                  border-radius: 8px;
+                  margin-bottom: 12px;
+                    .txtUserName {
+                      font-family: 'Montserrat';
+                      font-style: normal;
+                      font-weight: 400;
+                      font-size: 14px;
+                      line-height: 20px;
+                      letter-spacing: 0.3px;
+                      color: #650107;
+                      margin-bottom: 8px;
+                    }
+                    .userNameDate {
+                      font-family: 'Montserrat';
+                      font-style: normal;
+                      font-weight: 400;
+                      font-size: 12px;
+                      line-height: 20px;
+                      letter-spacing: 0.3px;
+                      color: rgba(101, 1, 8, 0.639);
+                    }
+                }
+
+              }
+          } 
+          .mesUserr {
+            margin-bottom: 24px;
+            .userImg {
+              display: flex;
+              justify-content: space-between;
+              padding: 0 12px;
+              .txtMes {
+                max-width: 299px;
+                width: 100%;
+                background: linear-gradient(180deg, #FE858D 0%, #FE616B 100%);
+                border-radius: 8px;
+                  .txtUserName {
+                    font-family: 'Montserrat';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 14px;
+                    line-height: 20px;
+                    letter-spacing: 0.3px;
+                    color: #FFFFFF;
+                    padding: 12px;
+                  }
+                  .userNameDate {
+                     padding: 0 12px 12px 12px;
+                     font-family: 'Montserrat';
+                     font-style: normal;
+                     font-weight: 400;
+                     font-size: 12px;
+                     line-height: 20px;
+                     letter-spacing: 0.3px;
+                     color: rgba(255, 255, 255, 0.6);
+                  }
+              }
+              img {
+                margin-left: 12px;
+              }
+            }
+          }
+
+        }
+
+    }
+    .mesFirl {
+      padding: 0 12px;
+      .firlmes {
+        background: #FFFFFF;
+        box-shadow: 0px 0px 4px rgba(29, 68, 73, 0.268);
+        border-radius: 1000px;
+        padding: 0 12px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .mesTxT {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          input {
+            background: #FFFFFF;
+            max-width: 343px;
+            width: 100%;
+              &::placeholder {
+                font-family: 'Montserrat';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 20px;
+                letter-spacing: 0.3px;
+                color: rgba(101, 1, 7, 0.32);
+              }
+          }
+          img {
+              padding: 8px 4px;
+          }
+        }
+        .actionMes {
+          .actionMes1 {
+            margin-right: 8px;
+          }
+          img {
+            cursor: pointer;
+          }
+        }
+      }
+    }
+}

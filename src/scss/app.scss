@@ -1,0 +1,1123 @@
+@import '_mobile';
+@import '_resiter';
+* {
+  padding: 0;
+  margin: 0;
+  font-family: Montserrat;
+
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: Montserrat;
+  background-image: url("../image/nen.png");
+  background-size: cover;
+}
+.header {
+  margin-bottom: 20px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.24);
+}
+.container {
+  max-width: 1310px;
+  margin: 0 auto;
+	
+	@include deptop1350 {
+		max-width: 1250px;
+		margin: 0 auto;
+	}
+	@include deptop1270 {
+		max-width: 1170px;
+		margin: 0 auto;
+	}
+	@include deptop1190 {
+		max-width: 1100px;
+		margin: 0 auto;
+	}	
+	@include deptop1110 {
+		max-width: 1000px;
+		margin: 0 auto;
+	}	
+	@include deptop1000 {
+		max-width: 900px;
+		margin: 0 auto;
+	}
+	@include deptop930 {
+		max-width: 800px;
+		margin: 0 auto;
+	}
+	@include deptop800 {
+		max-width: 700px;
+		margin: 0 auto;
+	}
+
+}
+
+@include deptop400 {
+		.logo  img{
+			width: 120px;
+		}
+}
+.menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0 20px 0;
+  @include deptop930 {
+	align-items: center;
+}
+@include deptop720 {
+	display: block;
+	justify-content: center;
+	align-items: center;
+	margin-left: 20px;
+}
+@include deptop580 {
+	display: grid;
+	justify-content: flex-start;
+	align-items: center;
+}
+
+
+}
+// css fb ở phiên bản mobilde
+@include deptop580 {
+	.menu-list {
+		position: relative; 
+		.item-mobile {
+			position: absolute;
+			top: 0;
+			left: 190px;
+		}
+	}
+
+
+}	
+@include deptop400 {
+	.menu-list {
+		position: relative; 
+		.item-mobile {
+			position: absolute;
+			top: 0;
+			left: 180px;
+		}
+	}
+
+
+}	
+
+
+
+.menu-list {
+  display: flex;
+  @include deptop720 {
+	margin-top: 20px;
+	display: flex;
+	justify-content: flex-start;
+}
+@include deptop580 {
+	display: grid;
+	justify-content: center;
+	align-items: center;
+}	
+
+  .menu-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &:hover {
+      cursor: pointer;
+  }
+  @include deptop580 {
+	align-items: center;
+	justify-content: flex-start;
+	margin: 10px 0;
+}	
+    .item1 {
+      padding: 8px;
+      background: rgba(255, 255, 255, 0.24);
+      border-radius: 50px;
+      margin-right: 6px;
+	  @include deptop930 {
+		margin-right: 3px;
+	}
+
+	@include deptop800 {
+		margin-right: 3px;
+	}
+	@include deptop720 {
+		margin-right: 6px;
+	}
+	@include deptop580 {
+		padding: 11px;
+	}	
+	@include deptop400 {
+		padding: 6px;
+	
+	}
+    }
+    .item2 {
+      padding: 10px 9px ;
+      background: rgba(255, 255, 255, 0.24);
+      margin-right: 6px;
+      border-radius: 50px;
+	  @include deptop930 {
+		margin-right: 3px;
+	}
+	@include deptop800 {
+		margin-right: 3px;
+	}
+	@include deptop720 {
+		margin-right: 6px;
+	}
+	@include deptop580 {
+		padding: 11px;
+	}	
+	@include deptop400 {
+		padding: 6px;
+	
+	}
+    }
+    .item3 {
+      padding: 8px 11px;
+      background: rgba(255, 255, 255, 0.24);
+      border-radius: 50px;
+	  @include deptop580 {
+		padding: 10px 13px;
+	}	
+	@include deptop400 {
+		padding: 6px 9px;
+	
+	}	
+    }	
+
+  }
+  .menu-item1 {
+    margin-right: 40px;
+	@include deptop930 {
+		margin-right: 20px;
+	}
+	@include deptop800 {
+		margin-right: 10px;
+	}
+	@include deptop720 {
+		margin-right: 20px;
+	}
+
+  }
+  .item {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.003em;
+    color: rgba(255, 255, 255, 0.87);
+    &:hover {
+      color: #333;
+    }
+	@include deptop580 {
+		font-size: 16px;
+	}	
+	@include deptop400 {
+		font-size: 1rem;
+
+	
+	}	
+  }
+  .item-item {
+    margin-right: 40px;
+	@include deptop930 {
+		margin-right: 20px;
+	}
+	@include deptop800 {
+		margin-right: 10px;
+	}
+	@include deptop720 {
+		margin-right: 20px;
+	}
+  }
+}
+
+// main
+main {
+  background: url("../image/nen1.png");
+  background-repeat: no-repeat; 
+  background-position: 50% 50%; 
+}
+
+.form-login {
+  z-index: 1;
+  max-width: 471px;
+  margin: 0 auto;
+  background: #FFFFFF;
+  border-radius: 40px;
+  padding: 40px 24px;
+  margin-top: 112px;
+  margin-bottom: 169px;
+  @include deptop1350 {
+	max-width: 450px;
+	margin: 0 auto;
+	background: #FFFFFF;
+	border-radius: 25px;
+	padding: 25px;
+	margin-top: 60px;
+	margin-bottom: 266px;
+}	
+  @include deptop1270 {
+	max-width: 450px;
+	margin: 0 auto;
+	background: #FFFFFF;
+	border-radius: 25px;
+	padding: 25px;
+	margin-top: 60px;
+	margin-bottom: 266px;
+}	
+  @include deptop1190 {
+	max-width: 450px;
+	margin: 0 auto;
+	background: #FFFFFF;
+	border-radius: 25px;
+	padding: 25px;
+	margin-top: 60px;
+	margin-bottom: 266px;
+}	
+  @include deptop1110 {
+	max-width: 450px;
+	margin: 0 auto;
+	background: #FFFFFF;
+	border-radius: 25px;
+	padding: 25px;
+	margin-top: 60px;
+	margin-bottom: 266px;
+}	
+  @include deptop1000 {
+	max-width: 450px;
+	margin: 0 auto;
+	background: #FFFFFF;
+	border-radius: 25px;
+	padding: 25px;
+	margin-top: 60px;
+	margin-bottom: 266px;
+}	
+  @include deptop930 {
+	max-width: 450px;
+	margin: 0 auto;
+	background: #FFFFFF;
+	border-radius: 25px;
+	padding: 25px;
+	margin-top: 60px;
+	margin-bottom: 266px;
+}	
+  @include deptop850 {
+	max-width: 450px;
+	margin: 0 auto;
+	background: #FFFFFF;
+	border-radius: 25px;
+	padding: 25px;
+	margin-top: 60px;
+	margin-bottom: 266px;
+}	
+  @include deptop800 {
+	max-width: 450px;
+	margin: 0 auto;
+	background: #FFFFFF;
+	border-radius: 25px;
+	padding: 25px;
+	margin-top: 60px;
+	margin-bottom: 266px;
+}	
+  @include deptop720 {
+	max-width: 450px;
+	margin: 0 auto;
+	background: #FFFFFF;
+	border-radius: 25px;
+	padding: 25px;
+	margin-top: 60px;
+	margin-bottom: 214px;
+}	
+  @include deptop580 {
+	max-width: 450px;
+	margin: 0 auto;
+	background: #FFFFFF;
+	border-radius: 25px;	
+	padding: 25px;
+	margin-top: 60px;
+	margin-bottom: 140px;
+}	
+@include deptop520 {
+	max-width: 400px;
+	margin: 0 auto;
+	background: #FFFFFF;
+	border-radius: 25px;
+	padding: 25px;
+	margin-top: 60px;
+	margin-bottom: 140px;
+}
+
+@include deptop475 {
+	max-width: 350px;
+	margin: 0 auto;
+	background: #FFFFFF;
+	border-radius: 25px;
+	padding: 25px;
+	margin-top: 60px;
+	margin-bottom: 140px;
+}
+	
+
+@include deptop440 {
+	max-width: 320px;
+	margin: 0 auto;
+	background: #FFFFFF;
+	border-radius: 25px;
+	padding: 25px;
+	margin-top: 60px;
+	margin-bottom: 140px;
+}
+@include deptop400 {
+	max-width: 290px;
+	margin: 0 auto;
+	background: #FFFFFF;
+	border-radius: 25px;
+	padding: 25px;
+	margin-top: 60px;
+	margin-bottom: 177px;
+}
+}
+.header-login {
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 24px;
+	line-height: 32px;
+	text-align: center;
+	letter-spacing: 0.024em;
+	color: #650107;
+	@include deptop400 {
+		font-family: Montserrat;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 20px;
+		line-height: 32px;
+		text-align: center;
+		letter-spacing: 0.024em;
+		color: #650107;
+	}
+}
+.form-logo {
+margin-top: 4px;
+margin-left: 190px;
+margin-bottom: 24px;
+@include deptop1350 {
+	margin-left: 179px;
+	margin-bottom:15px;
+}
+@include deptop1270 {
+	margin-left: 179px;
+	margin-bottom:15px;
+}
+@include deptop1190 {
+	margin-left: 179px;
+	margin-bottom:15px;
+}
+@include deptop1110 {
+	margin-left: 179px;
+	margin-bottom:15px;
+}
+@include deptop1000 {
+	margin-left: 179px;
+	margin-bottom:15px;
+}
+@include deptop930 {
+	margin-left: 179px;
+	margin-bottom:15px;
+}
+@include deptop850 {
+	margin-left: 179px;
+	margin-bottom:15px;
+}
+@include deptop800 {
+	margin-left: 179px;
+	margin-bottom:15px;
+}
+@include deptop720 {
+	margin-left: 179px;
+	margin-bottom:15px;
+}
+@include deptop580 {
+	margin-left: 179px;
+	margin-bottom:15px;
+}
+@include deptop520 {
+	margin-left: 153px;
+	margin-bottom:15px;
+}
+@include deptop475 {
+	margin-left: 128px;
+	margin-bottom:15px;
+}
+@include deptop440 {
+	margin-left: 113px;
+	margin-bottom:15px;
+}
+@include deptop400 {
+	margin-left: 97px;
+	margin-bottom:15px;
+}
+}
+.form {
+	display: flex;
+	align-items: center;
+	&-tk {
+		font-family: Montserrat;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 14px;
+		line-height: 20px;
+		font-weight: 500;
+		letter-spacing: 0.012em;
+		color: rgba(101, 1, 7, 0.6);
+	}
+	&-footer {
+		margin-left: 8px;
+		font-family: Montserrat;
+		font-style: normal;
+		font-weight: 600;
+		font-size: 14px;
+		line-height: 20px;
+		letter-spacing: 0.012em;
+		color: #FE616B;
+		text-decoration: none;		
+	}
+}
+
+.form-dn {
+	margin-top: 17px;
+
+	.dangnhap {
+		font-family: Montserrat;
+		font-style: normal;
+		font-weight: 600;
+		font-size: 14px;
+		line-height: 20px;
+		letter-spacing: 0.012em;
+		text-transform: capitalize;
+		color: rgba(101, 1, 7, 0.87);
+	}
+	#dangnhap {
+		margin-top: 8px;
+		background: #FFFFFF;
+		border: 1px solid #E8E8E8;
+		box-sizing: border-box;
+		border-radius: 8px;
+		width: 100%;
+		padding: 12px 16px;
+		color: rgba(101, 1, 7, 0.87);
+
+		&::placeholder {
+			font-family: Montserrat;
+			font-style: normal;
+			font-weight: normal;
+			font-size: 16px;
+			line-height: 24px;
+			letter-spacing: 0.012em;
+			color: rgba(101, 1, 7, 0.87);
+			@include deptop800 {
+				font-family: Montserrat;
+				font-style: normal;
+				font-weight: normal;
+				font-size: 14px;
+				line-height: 24px;
+				letter-spacing: 0.012em;
+				color: rgba(101, 1, 7, 0.87);
+			}
+			@include deptop720 {
+				font-family: Montserrat;
+				font-style: normal;
+				font-weight: normal;
+				font-size: 14px;
+				line-height: 24px;
+				letter-spacing: 0.012em;
+				color: rgba(101, 1, 7, 0.87);
+			}
+			@include deptop580 {
+				font-family: Montserrat;
+				font-style: normal;
+				font-weight: normal;
+				font-size: 14px;
+				line-height: 24px;
+				letter-spacing: 0.012em;
+				color: rgba(101, 1, 7, 0.87);
+			}
+			@include deptop520 {
+				font-family: Montserrat;
+				font-style: normal;
+				font-weight: normal;
+				font-size: 14px;
+				line-height: 24px;
+				letter-spacing: 0.012em;
+				color: rgba(101, 1, 7, 0.87);
+			}
+			@include deptop475 {
+				font-family: Montserrat;
+				font-style: normal;
+				font-weight: normal;
+				font-size: 13px;
+				line-height: 24px;
+				letter-spacing: 0.012em;
+				color: rgba(101, 1, 7, 0.87);
+			}
+			@include deptop440 {
+				font-family: Montserrat;
+				font-style: normal;
+				font-weight: normal;
+				font-size: 13px;
+				line-height: 24px;
+				letter-spacing: 0.012em;
+				color: rgba(101, 1, 7, 0.87);
+			}
+			@include deptop400 {
+				font-family: Montserrat;
+				font-style: normal;
+				font-weight: normal;
+				font-size: 12px;
+				line-height: 24px;
+				letter-spacing: 0.012em;
+				color: rgba(101, 1, 7, 0.87);
+			}
+			@include deptop375 {
+				font-family: Montserrat;
+				font-style: normal;
+				font-weight: normal;
+				font-size: 12px;
+				line-height: 24px;
+				letter-spacing: 0.012em;
+				color: rgba(101, 1, 7, 0.87);
+			}
+		}
+	}
+}
+
+.form-mk {
+	margin-top: 17px;
+	position: relative;
+	.matkhau {
+		font-family: Montserrat;
+		font-style: normal;
+		font-weight: 600;
+		font-size: 14px;
+		line-height: 20px;
+		letter-spacing: 0.012em;
+		text-transform: capitalize;
+		color: rgba(101, 1, 7, 0.87);
+	}
+	#matkhau {
+		margin-top: 8px;
+		background: #FFFFFF;
+		border: 1px solid #E8E8E8;
+		box-sizing: border-box;
+		border-radius: 8px;
+		width: 100%;
+		padding: 12px 16px;
+		color: rgba(101, 1, 7, 0.87);
+	}
+	.clickme {
+		position: absolute;
+		top: 39px;
+		right:  14px;
+		cursor: pointer;
+	}
+
+}
+.form-luu {
+margin-top: 20px;
+margin-bottom: 24px;
+display: flex;
+justify-content: space-between;
+align-items: center;
+	.form-check {
+		display: flex;
+		align-items: center;
+		.form-luu-txt {
+			font-family: Montserrat;
+			font-style: normal;
+			font-weight: normal;
+			font-size: 16px;
+			line-height: 24px;
+			letter-spacing: 0.012em;
+			color: rgba(101, 1, 7, 0.87);
+			margin-left: 12px;
+			@include deptop400 {
+				font-family: Montserrat;
+				font-style: normal;
+				font-weight: normal;
+				font-size: 14px;
+				line-height: 24px;
+				letter-spacing: 0.012em;
+				color: rgba(101, 1, 7, 0.87);
+				margin-left: 12px;
+			}
+		}
+	}
+	.form-quenmk {
+		font-family: Montserrat;
+		font-style: normal;
+		font-weight: 600;
+		font-size: 16px;
+		line-height: 24px;
+		text-align: right;
+		letter-spacing: 0.012em;
+		color: #FE616B;
+		@include deptop400 {
+			font-family: Montserrat;
+			font-style: normal;
+			font-weight: 600;
+			font-size: 14px;
+			line-height: 24px;
+			text-align: right;
+			letter-spacing: 0.012em;
+			color: #FE616B;
+		}
+	}
+}
+.clickdn {
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: 600;
+	font-size: 16px;
+	line-height: 24px;
+	text-align: center;
+	letter-spacing: 0.012em;
+	color: #FFFFFF;
+	padding: 12px 0px;
+	background: linear-gradient(180deg, #FE858D 0%, #FE616B 100%);
+	border-radius: 8px;
+	width: 100%;
+	margin-bottom: 20px;
+	&:hover {
+		cursor: pointer;
+		color: #fff;
+		background:#dbdb ;
+	
+	}
+	@include deptop400 {
+		font-family: Montserrat;
+		font-style: normal;
+		font-weight: 600;
+		font-size: 15px;
+		line-height: 24px;
+		text-align: center;
+		letter-spacing: 0.012em;
+		color: #FFFFFF;
+		padding: 12px 0px;
+		background: linear-gradient(180deg, #FE858D 0%, #FE616B 100%);
+		border-radius: 8px;
+		width: 100%;
+		margin-bottom: 20px;
+	}
+}
+.form-end {
+	position: relative;
+
+	.form-end1 {
+		font-style: normal;
+		font-weight: normal;
+		font-size: 16px;
+		line-height: 150%;
+		text-align: center;
+		letter-spacing: 0.012em;
+		color: rgba(101, 1, 7, 0.6);
+		padding: 0 16px;
+		background-color: #fff;
+		@include deptop400 {
+			font-style: normal;
+			font-weight: normal;
+			font-size: 14px;
+			line-height: 150%;
+			text-align: center;
+			letter-spacing: 0.012em;
+			color: rgba(101, 1, 7, 0.6);
+			padding: 0 16px;
+			background-color: #fff;
+		}
+	}	
+	.form-firl1 {
+		position: absolute;
+		height: 1px;
+		width:  300px;
+		background: rgba(101, 1, 7, 0.16);
+		top: 12px;
+      left: 84px;
+	}
+}
+// form footer
+.form-footerr {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-top: 10px;
+
+	.footer-dn {
+		font-family: Montserrat;
+		font-style: normal; 
+		font-weight: 500;
+		font-size: 16px;
+		line-height: 24px;
+		text-align: center;
+		letter-spacing: 0.012em;
+		color: rgba(101, 1, 7, 0.87);
+		padding: 8px 97px;
+		@include deptop1350 {
+			font-family: Montserrat;
+			font-style: normal; 
+			font-weight: 500;
+			font-size: 15px;
+			line-height: 24px;	
+			text-align: center;
+			letter-spacing: 0.012em;
+			color: rgba(101, 1, 7, 0.87);
+			padding: 8px 95px;
+		}
+		@include deptop1270 {
+			font-family: Montserrat;
+			font-style: normal; 
+			font-weight: 500;
+			font-size: 15px;
+			line-height: 24px;	
+			text-align: center;
+			letter-spacing: 0.012em;
+			color: rgba(101, 1, 7, 0.87);
+			padding: 8px 95px;
+		}
+		@include deptop1190 {
+			font-family: Montserrat;
+			font-style: normal; 
+			font-weight: 500;
+			font-size: 15px;
+			line-height: 24px;	
+			text-align: center;
+			letter-spacing: 0.012em;
+			color: rgba(101, 1, 7, 0.87);
+			padding: 8px 95px;
+		}
+		@include deptop1110 {
+			font-family: Montserrat;
+			font-style: normal; 
+			font-weight: 500;
+			font-size: 15px;
+			line-height: 24px;	
+			text-align: center;
+			letter-spacing: 0.012em;
+			color: rgba(101, 1, 7, 0.87);
+			padding: 8px 95px;
+		}
+		@include deptop1000 {
+			font-family: Montserrat;
+			font-style: normal; 
+			font-weight: 500;
+			font-size: 15px;
+			line-height: 24px;	
+			text-align: center;
+			letter-spacing: 0.012em;
+			color: rgba(101, 1, 7, 0.87);
+			padding: 8px 95px;
+		}
+		@include deptop930 {
+			font-family: Montserrat;
+			font-style: normal; 
+			font-weight: 500;
+			font-size: 15px;
+			line-height: 24px;
+			text-align: center;
+			letter-spacing: 0.012em;
+			color: rgba(101, 1, 7, 0.87);
+			padding: 8px 95px;
+		}
+		@include deptop850 {
+			font-family: Montserrat;
+			font-style: normal; 
+			font-weight: 500;
+			font-size: 15px;
+			line-height: 24px;
+			text-align: center;
+			letter-spacing: 0.012em;
+			color: rgba(101, 1, 7, 0.87);
+			padding: 8px 95px;
+		}
+		@include deptop800 {
+			font-family: Montserrat;
+			font-style: normal; 
+			font-weight: 500;
+			font-size: 15px;
+			line-height: 24px;
+			text-align: center;
+			letter-spacing: 0.012em;
+			color: rgba(101, 1, 7, 0.87);
+			padding: 8px 95px;
+		}
+		@include deptop720 {
+			font-family: Montserrat;
+			font-style: normal; 
+			font-weight: 500;
+			font-size: 15px;
+			line-height: 24px;
+			text-align: center;
+			letter-spacing: 0.012em;
+			color: rgba(101, 1, 7, 0.87);
+			padding: 8px 95px;
+		}
+		@include deptop580 {
+			font-family: Montserrat;
+			font-style: normal; 
+			font-weight: 500;
+			font-size: 15px;
+			line-height: 24px;
+			text-align: center;
+			letter-spacing: 0.012em;
+			color: rgba(101, 1, 7, 0.87);
+			padding: 8px 94px;
+		}
+		@include deptop520 {
+			font-family: Montserrat;
+			font-style: normal; 
+			font-weight: 500;
+			font-size: 15px;
+			line-height: 24px;
+			text-align: center;
+			letter-spacing: 0.012em;
+			color: rgba(101, 1, 7, 0.87);
+			padding: 8px 70px;
+		}
+		@include deptop475 {
+			font-family: Montserrat;
+			font-style: normal; 
+			font-weight: 500;
+			font-size: 14px;
+			line-height: 24px;
+			text-align: center;
+			letter-spacing: 0.012em;
+			color: rgba(101, 1, 7, 0.87);
+			padding: 8px 52px;
+		}
+		@include deptop440 {
+			font-family: Montserrat;
+			font-style: normal; 
+			font-weight: 500;
+			font-size: 14px;
+			line-height: 24px;
+			text-align: center;
+			letter-spacing: 0.012em;
+			color: rgba(101, 1, 7, 0.87);
+			padding: 8px 36px;
+		}
+		@include deptop400 {
+			font-family: Montserrat;
+			font-style: normal; 
+			font-weight: 500;
+			font-size: 14px;
+			line-height: 24px;
+			text-align: center;
+			letter-spacing: 0.012em;
+			color: rgba(101, 1, 7, 0.87);
+			padding: 8px 21px;
+		}
+	}
+}
+.linkclick {
+		background: #FFFFFF;
+		border-radius: 8px;
+		padding: 8px;
+		display: flex;
+		align-items: center;
+		box-shadow: 1px 1px 1px 1px rgb(238, 232, 232);
+		&:hover {
+			cursor: pointer;
+			background-color: #E8E8E8;
+		}
+}
+.footer {
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 16px;
+	line-height: 24px;
+	color: rgba(101, 1, 7, 0.38);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.codeEmail {
+	position: relative;
+	margin-bottom: 16px;
+.layma {
+	position: absolute;
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: 600;
+	font-size: 16px;
+	line-height: 24px;
+	text-align: right;
+	letter-spacing: 0.012em;
+	color: #FE616B;
+	top: 40px;
+    right: 15px;
+	@include deptop850 {
+		position: absolute;
+		font-family: Montserrat;
+		font-style: 15px;
+		font-weight: 600;
+		font-size: 15px;
+		line-height: 24px;
+		text-align: right;
+		letter-spacing: 0.012em;
+		color: #FE616B;
+		top: 40px;
+		right: 15px;
+	}
+	@include deptop800 {
+		position: absolute;
+		font-family: Montserrat;
+		font-style: 14px;
+		font-weight: 600;
+		font-size: 14px;
+		line-height: 24px;
+		text-align: right;
+		letter-spacing: 0.012em;
+		color: #FE616B;
+		top: 40px;
+		right: 15px;
+	}
+	@include deptop720 {
+		position: absolute;
+		font-family: Montserrat;
+		font-style: 14px;
+		font-weight: 600;
+		font-size: 14px;
+		line-height: 24px;
+		text-align: right;
+		letter-spacing: 0.012em;
+		color: #FE616B;
+		top: 40px;
+		right: 15px;
+	}
+	@include deptop580 {
+		position: absolute;
+		font-family: Montserrat;
+		font-style: 14px;
+		font-weight: 600;
+		font-size: 14px;
+		line-height: 24px;
+		text-align: right;
+		letter-spacing: 0.012em;
+		color: #FE616B;
+		top: 40px;
+		right: 15px;
+	}
+	@include deptop520 {
+		position: absolute;
+		font-family: Montserrat;
+		font-style: 14px;
+		font-weight: 600;
+		font-size: 14px;
+		line-height: 24px;
+		text-align: right;
+		letter-spacing: 0.012em;
+		color: #FE616B;
+		top: 40px;
+		right: 15px;
+	}
+	@include deptop475 {
+		position: absolute;
+		font-family: Montserrat;
+		font-style: 14px;
+		font-weight: 600;
+		font-size: 14px;
+		line-height: 24px;
+		text-align: right;
+		letter-spacing: 0.012em;
+		color: #FE616B;
+		top: 40px;
+		right: 15px;
+	}
+	@include deptop440 {
+		position: absolute;
+		font-family: Montserrat;
+		font-style: 14px;
+		font-weight: 600;
+		font-size: 14px;
+		line-height: 24px;
+		text-align: right;
+		letter-spacing: 0.012em;
+		color: #FE616B;
+		top: 40px;
+		right: 15px;
+	}
+	@include deptop400 {
+		position: absolute;
+		font-family: Montserrat;
+		font-style: 14px;
+		font-weight: 600;
+		font-size: 14px;
+		line-height: 24px;
+		text-align: right;
+		letter-spacing: 0.012em;
+		color: #FE616B;
+		top: 40px;
+		right: 15px;
+	}
+	@include deptop375 {
+		position: absolute;
+		font-family: Montserrat;
+		font-style: 10px;
+		font-weight: 600;
+		font-size: 12px;
+		line-height: 24px;
+		text-align: right;
+		letter-spacing: 0.012em;
+		color: #FE616B;
+		top: 40px;
+		right: 15px;
+	}
+}
+}
+
+.form-code {
+margin-left: 20px;
+margin-bottom: 32px;
+border-left: 1px solid #FE616B ;
+padding-left: 16px;
+	.form-txt {
+		font-family: Montserrat;
+		font-style: normal;
+		font-weight: 600;
+		font-size: 14px;
+		line-height: 20px;
+		letter-spacing: 0.012em;
+		text-transform: capitalize;
+		color: rgba(101, 1, 7, 0.87);
+	}
+	#codeTxt {
+		margin-top: 8px;
+		background: #FFFFFF;
+		border: 1px solid #E8E8E8;
+		box-sizing: border-box;
+		border-radius: 8px;
+		width: 100%;
+		padding: 12px 16px;
+		color: rgba(101, 1, 7, 0.87);
+
+		&::placeholder {
+			color: rgba(101, 1, 7, 0.87);
+			@include deptop400 {
+				color: rgba(101, 1, 7, 0.87);
+				font-size: 12px;
+			}
+			@include deptop375 {
+				color: rgba(101, 1, 7, 0.87);
+				font-size: 12px;
+			}
+		}
+	}
+}
